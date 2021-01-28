@@ -269,4 +269,6 @@ RUN php -v | head -n 1 | grep -q "PHP ${PHP_VERSION}."
 #--------------------------------------------------------------------------
 #
 
+COPY ./laravel.ini /usr/local/etc/php/conf.d
+
 WORKDIR /etc/supervisor/conf.d/
